@@ -1,3 +1,5 @@
+//pirveli
+
 // function finder(array) {
 //   let Yperson = array[0];
 
@@ -18,6 +20,7 @@
 // const Yname = finder(users);
 // console.log(Yname);
 
+//meore
 
 // function updateUser(user) {
 //   const updatedUser = {
@@ -38,6 +41,8 @@
 
 // const updatedUser = updateUser(user);
 // console.log(updatedUser);
+
+//measme
 
 function rollDice() {
   return Math.floor(Math.random() * 6) + 1;
