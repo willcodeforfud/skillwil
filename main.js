@@ -1,76 +1,53 @@
-// function finder(array) {
-//   let Yperson = array[0];
+// pirveli
 
-//   for (let i = 1; i < array.length; i++) {
-//     if (array[i].age < Yperson.age) {
-//       Yperson = array[i];
-//     }
+// const calculateValues = (n) => {
+//   if (n <= 2 || n % 2 === 0) {
+//     throw new Error("Invalid input! n must be an odd number greater than 2.");
 //   }
 
-//   return Yperson.name;
-// }
-// const users = [
-//   { name: 'Temo', age: 25 },
-//   { name: 'Lasha', age: 21 },
-//   { name: 'Ana', age: 28 }
-// ];
+//   const sum = n + (n - 1);
 
-// const Yname = finder(users);
-// console.log(Yname);
+//   let restProduct = 1;
+//   for (let i = 3; i <= n; i += 1) {
+//     restProduct *= i;
+//   }
 
-
-// function updateUser(user) {
-//   const updatedUser = {
-//     ...user,
-//     name: 'nika',
-//     age: 20,
-//     status: 'student',
-//   };
-
-//   return updatedUser;
-// }
-
-// const user = {
-//   name: 'giga',
-//   age: 25,
-//   status: 'mentor'
+//   return [sum, restProduct];
 // };
 
-// const updatedUser = updateUser(user);
-// console.log(updatedUser);
+// const n = 7;
+// const result = calculateValues(n);
+// console.log(result);
 
-function rollDice() {
-  return Math.floor(Math.random() * 6) + 1;
-}
+// meore
 
-function playGame() {
-  let attemptsA = 0;
-  let attemptsB = 0;
-  let rollA = 0;
-  let rollB = 0;
+// const getCityFromUser = (user) => {
+//   const { banks: [, , { address: { city } = {} } = {}] = [] } = user;
+//   return city;
+// };
 
-  while (rollA !== 3 && rollB !== 3) {
-    rollA = rollDice();
-    rollB = rollDice();
+// const user = {
+//   banks: [
+//     { address: { city: 'Tbilisi' } },
+//     { address: { city: 'Batumi' } },
+//     { address: { city: 'Sokhumi' } }
+//   ]
+// };
 
-    attemptsA++;
-    attemptsB++;
+// const city = getCityFromUser(user);
+// console.log(city);
 
-    console.log(`Player A rolled: ${rollA}`);
-    console.log(`Player B rolled: ${rollB}`);
-  }
+// mesame
 
-  console.log("Game Over!");
-  console.log(`Player A made ${attemptsA} attempts`);
-  console.log(`Player B made ${attemptsB} attempts`);
+// const originalObject = {
+//   name: 'John',
+//   age: 30,
+//   address: {
+//     city: 'New York',
+//     country: 'USA'
+//   },
+//   hobbies: ['reading', 'painting']
+// };
 
-  if (rollA === 3 && rollB !== 3) {
-    console.log("Player A wins!");
-  } else if (rollB === 3 && rollA !== 3) {
-    console.log("Player B wins!");
-  } else {
-    console.log("It's a tie!");
-  }
-}
-
-playGame();
+// const copiedObject = { ...originalObject };
+// console.log(copiedObject);
